@@ -15,6 +15,83 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>this is a green earth   </h2>
+    <!-- navbar section -->
+    <header class="">
+        <div class="navbar bg-base-100 shadow-sm bg-[#15803D]">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow ">
+        <li class="btn ">about</li>
+      <li class="py-1 btn">Gellary</li>
+      <li class="btn">Plant a tree</li>
+      </ul>
+    </div>
+    <a class="btn btn-ghost text-xl text-white px-4"> <span class="text-yellow-300"><i class="fa-solid fa-tree"></i></span>Green Earth</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal  justify-center">
+      <li class="text-white">about</li>
+      <li class="px-2 text-white">Gellary</li>
+      <li class="text-white">Plant a tree</li>
+    </ul>
+  </div>
+  <div class="navbar-end px-6">
+    <a class="btn bg-[#FACC15] rounded-2xl">Plant a Tree</a>
+  </div>
+</div>
+    </header>
+    <!-- hero section -->
+    <section class="">
+        <div class="hero bg-base-200 bg-[#CFF0DC] ">
+  <div class="hero-content px-0 py-0 flex-col lg:flex-row text-center ">
+    <img alt=""
+      src="./assets/hero-leaf1.png"
+      class="max-w-sm rounded-lg"
+    />
+    <div>
+      <h1 class="text-5xl font-bold">Box Office News!</h1>
+      <p class="py-6">
+        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+        quasi. In deleniti eaque aut repudiandae et a id nisi.
+      </p>
+      <button class="btn btn-primary">Get Started</button>
+    </div>
+    <img alt=""
+      src="./assets/hero-leaf2.png"
+      class="max-w-sm rounded-lg "
+    />
+  </div>
+</div>
+    </section>
+    <!-- menu and card section -->
+     <section>
+        <h2 class="text-black text-center text-xl font-bold pt-10">Chose Your Trees</h2>
+     <div class="flex border-2 border-green-500 pl-10 pr-10 pt-4 gap-4  ">   
+        <div class="">
+            <h3 class="text-black text-center text-xl font-bold">Categories</h3>
+
+            <div id="catagories-container">
+                <button class="btn btn-primary">all Trees</button>
+            </div>
+            
+        </div>
+ <div id="card-container" class="grid grid-cols-3 gap-4 p-2">
+    
+
+ </div>  
+ <div class="border-2 border-green-500 p-4 flex-1">
+    <h2>Your card</h2>
+
+ </div>     
+        
+ 
+        </div>
+     </section>
+    <script src="index.js"></script>
 </body>
 </html>
