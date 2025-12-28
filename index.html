@@ -9,9 +9,9 @@
       <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
      <!-- font  -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -47,19 +47,18 @@
     </header>
     <!-- hero section -->
     <section class="">
-        <div class="hero bg-base-200 bg-[#CFF0DC] ">
+        <div class="hero  bg-[#CFF0DC] ">
   <div class="hero-content px-0 py-0 flex-col lg:flex-row text-center ">
     <img alt=""
       src="./assets/hero-leaf1.png"
       class="max-w-sm rounded-lg"
     />
     <div>
-      <h1 class="text-5xl font-bold">Box Office News!</h1>
+      <h1 class="text-3xl font-bold">Plant a Tree, Grow a Future</h1>
       <p class="py-6">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
+        Join our mission to plant 1 million trees and make the Earth greener for future generations.
       </p>
-      <button class="btn btn-primary">Get Started</button>
+      <button class="btn btn-primary rounded-2xl">Get involved</button>
     </div>
     <img alt=""
       src="./assets/hero-leaf2.png"
@@ -71,25 +70,28 @@
     <!-- menu and card section -->
      <section class="bg-[#F0FDF4]">
         <h2 class="text-black text-center text-xl font-bold pt-10">Chose Your Trees</h2>
-     <div class="flex border-2 border-green-500 pl-10 pr-10 pt-4 gap-4  ">   
-        <div class="border-2 border-red-500">
+        
+     <div class="flex flex-col lg:flex-row gap-4 p-4">   
+     
+        <div class="">
             <h3 class="text-black text-center text-xl font-bold">Categories</h3>
 
-            <div id="catagories-container">
-                <button id="allTree" onclick="loadallCards()" class="btn w-full">all Trees</button>
+            <div id="catagories-container" class="catagories-container flex lg:flex-col flex-wrap">
+                <button id="allTree" onclick="loadallCards()" class="btn w-1/2 lg:w-full">all Trees</button>
             </div>
             
         </div>
+<div class="flex flex-col lg:flex-row flex-wrap gap-4">
 
-
- <div id="card-container" class="grid grid-cols-3 gap-4 p-2 w-auto">
+ <div id="card-container" class=" flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-wrap gap-4 p-2">
     
 
  </div> 
+ 
 
  
  <!-- cart history section  -->
- <div class="border-2 bg-base-100 p-4 flex flex-col flex-1 h-auto rounded-lg">
+ <div class="bg-base-100 p-4 h-auto rounded-xl shadow-md w-full lg:w-1/4">
     <h2 class="font-bold text-2xl">Your card</h2>
     <div id="historyCard" class="">
         
@@ -100,14 +102,14 @@
     </div>
 
  </div>     
-        
+       </div> 
  
         </div>
+
+       
      </section>
-
-     <!-- campaign section -->
-
-<<section class="w-full bg-[#F0FDF4] border-2 border-green-800 my-10">
+    <!-- about section -->
+<section class="w-full bg-[#F0FDF4]  ">
   <h2 class="text-center text-2xl font-bold mb-6">
     About our campaign
   </h2>
@@ -132,19 +134,20 @@
   </div>
 </section>
 <!-- impact section -->
- <section class="border-2 border-green-800 p-6 my-10 bg-[#CFF0DC]">
+ <section class=" p-6  bg-[#CFF0DC]">
   <h2 class="text-center text-2xl font-bold pt-10">Our Impact</h2>
-  <div class="flex flex-col-3 gap-4 justify-center items-center pt-4 pb-10">
-    <div class="card w-96 bg-base-100 card-md shadow-sm">
+  <div class="grid grid-cols-3 gap-4 pt-4 pb-10">
+    <div>
+    <div class="card  bg-base-100 card-md shadow-sm">
   <div class="card-body items-center">
     <h2 class="card-title text-[#15803D] text-xl font-bold">500K+</h2>
     <p>Trees Planted</p>
-    
+    </div>
   </div>
 </div>
 
   <div>
-    <div class="card w-96 bg-base-100 card-md shadow-sm">
+    <div class="card  bg-base-100 card-md shadow-sm">
   <div class="card-body items-center">
     <h2 class="card-title text-[#15803D] text-xl font-bold">120+</h2>
     <p>Comunities involved</p>
@@ -154,7 +157,7 @@
 </div>
 
   <div>
-    <div class="card w-96 bg-base-100 card-md shadow-sm">
+    <div class="card  bg-base-100 card-md shadow-sm">
   <div class="card-body items-center">
     <h2 class="card-title text-[#15803D] text-xl font-bold">30+</h2>
     <p>Countries Reached</p>
@@ -164,6 +167,32 @@
 </div>
 </div>
  </section>
+ <!-- Plant a free tree section --> 
+  <footer class="bg-[#166534] py-20">
+    <h2 class="text-white text-center text-xl font-bold ">Plant a free tree</h2>
+    <div class="flex justify-center ">
+      <fieldset class="fieldset bg-[#15803D] rounded-box w-sm md:w-md lg:w-lg p-6 mt-4">
+  <input type="text" class="input w-sm md:w-md lg:w-lg" placeholder="Your Name" />
+  <input type="email" class="input w-sm md:w-md lg:w-lg" placeholder="Your email address" />
+ <div>
+  <select class="select appearance-none w-sm md:w-md lg:w-lg">
+  <option disabled selected>Pick a number</option>
+  <option>5</option>
+  <option>10</option>
+  <option>15</option>
+    </select>
+
+ </div>
+
+  <button class="btn btn-neutral mt-4 rounded-2xl">Login</button>
+</fieldset>
+    </div>
+    
+  </footer>
+  <div class="bg-[#14532D]">
+      <p class="text-center text-white p-4">© 2025 Green Earth. All rights reserved.</p>
+    </div>
+  
 
     <script src="index.js"></script>
 </body>

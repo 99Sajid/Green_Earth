@@ -11,7 +11,7 @@ displayallCards =(data)=>{
     data.plants.forEach(element => {
         const div = document.createElement('div');
         div.innerHTML=`
-               <div class="card bg-base-100 w-68 shadow-sm ">
+               <div class="card bg-base-100 w-auto shadow-sm ">
   <figure>
     <img class="w-full h-50 p-2 rounded-xl"
       src="${element.image} "
