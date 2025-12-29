@@ -46,7 +46,7 @@
 </div>
     </header>
     <!-- hero section -->
-    <section class="">
+    <section class=" w-full">
         <div class="hero  bg-[#CFF0DC] ">
   <div class="hero-content px-0 py-0 flex-col lg:flex-row text-center ">
     <img alt=""
@@ -134,7 +134,7 @@
   </div>
 </section>
 <!-- impact section -->
- <section class=" p-6  bg-[#CFF0DC]">
+ <section class=" w-full  bg-[#CFF0DC]">
   <h2 class="text-center text-2xl font-bold pt-10">Our Impact</h2>
   <div class="grid grid-cols-3 gap-4 pt-4 pb-10">
     <div>
@@ -168,10 +168,10 @@
 </div>
  </section>
  <!-- Plant a free tree section --> 
-  <footer class="bg-[#166534] py-20">
+  <footer class="bg-[#166534] py-20 w-full">
     <h2 class="text-white text-center text-xl font-bold ">Plant a free tree</h2>
     <div class="flex justify-center ">
-      <fieldset class="fieldset bg-[#15803D] rounded-box w-sm md:w-md lg:w-lg p-6 mt-4">
+      <fieldset class="fieldset bg-[#15803D] rounded-box w-sm md:w-md lg:w-lg p-6  mt-4">
   <input type="text" class="input w-sm md:w-md lg:w-lg" placeholder="Your Name" />
   <input type="email" class="input w-sm md:w-md lg:w-lg" placeholder="Your email address" />
  <div>
@@ -192,7 +192,22 @@
   <div class="bg-[#14532D]">
       <p class="text-center text-white p-4">© 2025 Green Earth. All rights reserved.</p>
     </div>
-  
+  <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+<dialog id="modelbtn" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="modelbody">
+
+    </div>
+    
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 
     <script src="index.js"></script>
 </body>
